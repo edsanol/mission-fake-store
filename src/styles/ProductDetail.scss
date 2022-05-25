@@ -1,0 +1,116 @@
+.product-detail__container {
+  display: flex;
+  max-width: 100vw;
+  background-color: #FFF;
+  margin: 0 150px;
+  justify-content: center;
+}
+.product-detail__img {
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #DDD;
+}
+.product-detail__img img {
+  width: 90%;
+}
+.product-detail__data {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 50%;
+  width: 100%;
+  border-top: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+.product-detail__data h2 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.tag {
+	position: relative;
+	display: inline-block;
+  margin-left: 20px;
+	background-color: #36f;
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0.8rem 1.5rem 0.8rem 2rem;
+	border-radius: 0 0.5rem 0.5rem 0;
+	transition: all 0.2s ease-in;
+
+	&::before {
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		right: 100%;
+		transform: translateY(-50%) translateX(50%);
+		height: 1rem;
+		width: 1rem;
+		border-radius: 50%;
+		background: #fafafa;
+		box-shadow: 0 -0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2);
+		transition: all 0.2s ease-in;
+		z-index: 2;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: -1.3rem;
+		transform: translateY(-50%) rotate(-45deg);
+		height: 2.55rem;
+		width: 2.55rem;
+		border-radius: 0.5rem 0 0 0;
+		background-color: #36f;
+		transition: all 0.2s ease-in;
+		z-index: 1;
+	}
+
+	&:hover {
+		background-color: #222;
+
+		&::after {
+			background-color: #222;
+		}
+	}
+}
+
+.product-detail__category {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #EEE;
+  font-weight: bold;
+  font-size: 25px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+}
+.product-detail__category p {
+  margin-left: 30px;
+  color: #CD736B;
+}
+.product-detail__description {
+  margin-top: 50px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 22px;
+  color: #555;
+}
+.product-detail__rating {
+  // display: flex;
+  margin-top: 50px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 20px;
+  color: #555;
+}
